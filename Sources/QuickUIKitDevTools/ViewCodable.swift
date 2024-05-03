@@ -13,6 +13,7 @@ public protocol ViewCodable {
     func addHierarchy()
     func addConstraints()
     func additionalConfig()
+    func addAccessibility()
 }
 
 public extension ViewCodable {
@@ -20,5 +21,7 @@ public extension ViewCodable {
         addHierarchy()
         addConstraints()
         additionalConfig()
+        addAccessibility()
     }
+    public func addAccessibility() { }
 }
